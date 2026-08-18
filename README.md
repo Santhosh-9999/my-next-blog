@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Project Status (local demo)
+
+This workspace has been customized as a demo blog. Key changes made locally:
+
+- Root layout with shared `Header` and `Footer` components.
+- Responsive posts index and dynamic post pages with fetch helpers.
+- `About` and `Profile` pages with simple styles and content.
+- Global design token tweaks in `app/globals.css`.
+
+Planned work is listed in `ROADMAP.md` in the repo.
