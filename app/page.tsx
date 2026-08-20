@@ -83,6 +83,14 @@ export default function Home() {
             </a>
             . (Note: consider consolidating to root `lib/`.)
           </li>
+          <li>
+            <a
+              className="text-indigo-600 hover:underline"
+              href="complex-dashboard"
+            >
+              complex-dashboard
+            </a>
+          </li>
         </ul>
       </section>
 
