@@ -3,21 +3,28 @@ export default function Layout({
   children,
   users,
   notifications,
-  revinue,
+  revenue,
+  login,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   notifications: React.ReactNode;
-  revinue: React.ReactNode;
+  revenue: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
+  const isLoggedIn = true; // ill implement a proper authentication check here in the future.
+  return isLoggedIn ? (
     <div className="space-y-6 p-6">
       <div>{children}</div>
       <div className="grid gap-6 md:grid-cols-2">
         <CardForDashBoard>{users}</CardForDashBoard>
         <CardForDashBoard>{notifications}</CardForDashBoard>
       </div>
-      <CardForDashBoard>{revinue}</CardForDashBoard>
+      <CardForDashBoard>{revenue}</CardForDashBoard>
+    </div>
+  ) : (
+    <div>
+      <CardForDashBoard>{login}</CardForDashBoard>
     </div>
   );
 }

@@ -86,7 +86,7 @@ export default function Home() {
           <li>
             <a
               className="text-indigo-600 hover:underline"
-              href="complex-dashboard"
+              href="/complex-dashboard"
             >
               complex-dashboard
             </a>
