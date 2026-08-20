@@ -3,12 +3,12 @@ export default function Layout({
   children,
   users,
   notifications,
-  revinue,
+  revenue,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   notifications: React.ReactNode;
-  revinue: React.ReactNode;
+  revenue: React.ReactNode;
 }) {
   return (
     <div className="space-y-6 p-6">
@@ -17,7 +17,7 @@ export default function Layout({
         <CardForDashBoard>{users}</CardForDashBoard>
         <CardForDashBoard>{notifications}</CardForDashBoard>
       </div>
-      <CardForDashBoard>{revinue}</CardForDashBoard>
+      <CardForDashBoard>{revenue}</CardForDashBoard>
     </div>
   );
 }
