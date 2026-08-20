@@ -64,17 +64,11 @@ export default function Home() {
           </li>
           <li>
             `about` and `profile` pages with simple styles:{" "}
-            <a
-              className="text-indigo-600 hover:underline"
-              href="/app/about/page.tsx"
-            >
+            <a className="text-indigo-600 hover:underline" href="about">
               About
             </a>
             ,{" "}
-            <a
-              className="text-indigo-600 hover:underline"
-              href="/app/profile/page.tsx"
-            >
+            <a className="text-indigo-600 hover:underline" href="profile">
               Profile
             </a>
             .
