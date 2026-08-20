@@ -4,6 +4,11 @@ import Link from "next/link";
 export default async function ListPosts() {
   let posts = [];
   let error: string | null = null;
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("2 seconds later");
+    }, 2000);
+  });
   try {
     posts = await fetchPosts(`https://jsonplaceholder.typicode.com/posts`);
   } catch (err: any) {
